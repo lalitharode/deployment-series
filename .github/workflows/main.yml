@@ -100,7 +100,4 @@ jobs:
         run: |
           docker system prune -f
 
-      - name: Stop and remove container if running
-        run: |
-          docker stop mltest || true
-          docker rm mltest || true    
+          
