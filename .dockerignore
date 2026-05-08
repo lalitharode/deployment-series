@@ -1,0 +1,7 @@
+devenv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.git/
+docker-compose.override.yml

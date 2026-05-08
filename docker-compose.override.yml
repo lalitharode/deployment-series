@@ -1,0 +1,4 @@
+services:
+  app:
+    build: .
+    image: basic-python-app:local
