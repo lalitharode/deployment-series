@@ -6,11 +6,12 @@ import models, schemas, auth
 
 models.Base.metadata.create_all(bind=engine)
 
+
 app = FastAPI()
 
 @app.get("/")
 async def read_root():
-    return "Hello World Guys how are you"
+    return "Hello World Guys how are you i am fine and you"
 
 @app.post("/register", response_model=schemas.UserOut, status_code=status.HTTP_201_CREATED)
 def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
